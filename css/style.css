@@ -7,6 +7,20 @@ h2 {
     font-size: 18pt;
 }
 
+/* NAVBAR */
+
+nav.navbar-static-top {
+    margin-bottom: 20px;
+}
+
+.navbar-inner .container {
+    max-width: 760px;
+    text-align: center;
+}
+
+/* END NAVBAR */
+
+
 /* HERO UNIT STYLING FOR FRONTPAGE */
 
 .hero-unit {
