@@ -16,6 +16,11 @@ h2 {
     color: #999;
 }
 
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 /* HOMEPAGE STYLING */
 .hero-background {
@@ -34,6 +39,8 @@ h2 {
 
 .faded h1 {
     text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .hero-unit h1, .hero-unit h3 { text-shadow:  0px 0px 10px #000; }
