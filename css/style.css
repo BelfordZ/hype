@@ -1,6 +1,11 @@
-.container-fluid {
+.bordered {
+    border-style:solid;
+    border-width:1px;
 }
 
+h2 {
+    font-size: 18pt;
+}
 
 /* HERO UNIT STYLING FOR FRONTPAGE */
 
