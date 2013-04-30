@@ -7,19 +7,38 @@ h2 {
     font-size: 18pt;
 }
 
+.page-header h1, .page-header h1 small {
+    font-family: 'Montserrat', sans-serif;
+    color: #222;    
+}
+
+.page-header h1 small {
+    color: #999;
+}
+
+
 /* HOMEPAGE STYLING */
 .hero-background {
     background: url("../img/banner.jpg") no-repeat 50% 55% #000;
 }
 
-.faded {
+.faded-home {
     background-color: rgba(0,0,0,0.5);
     padding: 100px;
 }
 
+.faded {
+    background-color: rgba(0,0,0,0.5);
+    padding: 30px;
+}
+
+.faded h1 {
+    text-align: left;
+}
+
 .hero-unit h1, .hero-unit h3 { text-shadow:  0px 0px 10px #000; }
 
-article h1 {
+article h1, article h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
