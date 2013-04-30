@@ -1,2 +1,48 @@
 .container-fluid {
 }
+
+
+/* HERO UNIT STYLING FOR FRONTPAGE */
+
+.hero-unit {
+    text-align: center;
+    color: #eee;
+    background-color: #222;
+}
+
+.hero-unit h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 52pt;
+}
+
+.hero-unit h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 22pt;
+    font-weight: 100;
+    //overflow: hidden;
+    text-align: center;
+}
+
+.hero-unit h3:before,
+.hero-unit h3:after {
+    background-color: #ddd;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+    margin-top: -10px;
+}
+
+.hero-unit h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.hero-unit h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+/* END HERO UNIT */
