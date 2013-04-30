@@ -7,6 +7,31 @@ h2 {
     font-size: 18pt;
 }
 
+/* HOMEPAGE STYLING */
+.hero-background {
+    background: url("../img/banner.jpg") no-repeat 50% 55% #000;
+}
+
+.faded {
+    background-color: rgba(0,0,0,0.5);
+    padding: 100px;
+}
+
+.hero-unit h1, .hero-unit h3 { text-shadow:  0px 0px 10px #000; }
+
+article h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+article p {
+    font-size: 12pt;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+/* END HOMEPAGE */
+
+
 /* NAVBAR */
 
 nav.navbar-static-top {
@@ -26,7 +51,6 @@ nav.navbar-static-top {
 .hero-unit {
     text-align: center;
     color: #eee;
-    background-color: #222;
 }
 
 .hero-unit h1 {
@@ -38,14 +62,13 @@ nav.navbar-static-top {
     font-family: 'Pacifico', cursive;
     font-size: 22pt;
     font-weight: 100;
-    //overflow: hidden;
     text-align: center;
     height: 38pt;
 }
 
 .hero-unit h3:before,
 .hero-unit h3:after {
-    background-color: #999;
+    background-color: #ddd;
     content: "";
     display: inline-block;
     height: 1px;
