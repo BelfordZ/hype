@@ -21,11 +21,12 @@
     font-weight: 100;
     //overflow: hidden;
     text-align: center;
+    height: 38pt;
 }
 
 .hero-unit h3:before,
 .hero-unit h3:after {
-    background-color: #ddd;
+    background-color: #999;
     content: "";
     display: inline-block;
     height: 1px;
