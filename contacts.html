@@ -9,10 +9,11 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:700|Pacifico|Lobster+Two" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"> 
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
   </head>
 
-  <body>
+  <body onload="initializeMaps()">
     
       <nav class="navbar navbar-inverse navbar-static-top">
 	<div class="navbar-inner">
@@ -23,7 +24,7 @@
               <li><a href="about.html">About</a></li>
               <li><a href="#">News & Events</a></li>
               <li><a href="#">Programs</a></li>
-	      <li><a href="calender.html">Calendar</a></li>
+	      <li><a href="calendar.html">Calendar</a></li>
               <li><a href="#">Registration</a></li>
               <li><a href="gallery.html">Gallery</a></li>
 	      <li class="active"><a href="#">Contacts</a></li>
@@ -88,8 +89,18 @@
 
 	<article class="span4">
 	  <h2>See us in person</h2>
+
+	  <p><b>Forestville Youth Centre</b></p>
+	  <p><div id="map_canvas0" style="width: 500px; height: 300px"></div></p>
+
+	  <p><b>Forestway YOYO's</b></p>    
+	  <p><div id="map_canvas1" style="width: 500px; height: 300px"></div></p>
+
+	  <p><b>Lionel Watts Sport and Community Centre</b></p>    
+	  <p><div id="map_canvas2" style="width: 500px; height: 300px"></div></p>
 	</article>
       </div>
-    </div>
+    </div>   
+    <script type="text/javascript" src="js/maps/contactUsMaps.js"></script>
   </body>
 </html>
