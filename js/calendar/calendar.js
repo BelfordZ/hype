@@ -3,7 +3,7 @@ window.onload = function() {
 }
 
 function main() {
-  var calId = 'developer-calendar@google.com';
+  var calId = '0a9obnn6f18bjh1aneqs1if6jk@group.calendar.google.com';
 
   var calendar = new calvis.Calendar();
 
@@ -18,7 +18,7 @@ function main() {
   calendar.setPublicCalendar(calId);  
   calendar.setLoginControl('loginControlDiv');  
 
-  calendar.setDefaultView('month');
+  calendar.setDefaultView('week');
   // display the calendar
   calendar.render();  
 }
@@ -26,20 +26,33 @@ function main() {
 function displayEvent(event) {    
   var title = event.getTitle().getText();  
   var date = event.getTimes()[0].getStartTime().getDate();
-  var content = event.getContent().getText();  
+  var content = event.getContent().getText();
+
+  content = $.parseJSON(content);
   
   var eventHtml = [];
-  eventHtml.push(date.toString());
-  eventHtml.push('<br><br>');
-  eventHtml.push('<b>Event title:</b> ');
+  eventHtml.push('<div class=\"well\">');
+   
+  eventHtml.push('<p><b>Class Scheduled:</b> ');
   eventHtml.push(title);
-  eventHtml.push('<br>');
-  eventHtml.push('<br>');
-  eventHtml.push('<b>Description:</b>');
-  eventHtml.push('<p style="font-size: 11px;">');
-  eventHtml.push(content); 
   eventHtml.push('</p>');
-  eventHtml.push('<br>');
+  
+  eventHtml.push('<p><b>Age Group: </b>');
+  eventHtml.push(content.age);
+  eventHtml.push('</p>');
+
+  eventHtml.push('<p><b>Location: </b>');
+  eventHtml.push(content.location);
+  eventHtml.push('</p>');
+ 
+ 
+  
+  if (content.info != "") {
+     eventHtml.push('<p><b>Info: </b>');
+     eventHtml.push(content.info);
+     eventHtml.push('</p>');
+  }
+  eventHtml.push('</div>');
 
   document.getElementById('eventDisplayDiv').innerHTML = eventHtml.join('');
 } 
